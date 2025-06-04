@@ -12,13 +12,22 @@ namespace SchoolRegistrationApp
 {
     public partial class AnaSayfa : Form
     {
+        Ogrenciler ogr;
         public AnaSayfa()
         {
             InitializeComponent();
         }
 
-        private void AnaSayfa_Load(object sender, EventArgs e)
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            if (ogr == null|| ogr.IsDisposed)
+            {
+                ogr = new Ogrenciler();
+                ogr.MdiParent = this;
+                ogr.Show();
+            }
+            else 
+                ogr.BringToFront();
 
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace SchoolRegistrationApp
 {
-    partial class AnaSayfa
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaSayfa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            o = new DevExpress.XtraBars.BarButtonItem();
+            TUDENTS = new DevExpress.XtraBars.BarButtonItem();
+            AC = new DevExpress.XtraBars.BarButtonItem();
+            AVE = new DevExpress.XtraBars.BarButtonItem();
+            ELETE = new DevExpress.XtraBars.BarButtonItem();
             barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            LCULATEO = new DevExpress.XtraBars.BarButtonItem();
             barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(components);
+            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)ribbonControl1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)xtraTabbedMdiManager1).BeginInit();
             SuspendLayout();
@@ -49,67 +51,66 @@
             // ribbonControl1
             // 
             ribbonControl1.ExpandCollapseItem.Id = 0;
-            ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl1.ExpandCollapseItem, ribbonControl1.SearchEditItem, barButtonItem1, barButtonItem2, barButtonItem3, barButtonItem4, barButtonItem5, barButtonItem6, barButtonItem7, barButtonItem8 });
+            ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { ribbonControl1.ExpandCollapseItem, ribbonControl1.SearchEditItem, o, TUDENTS, AC, AVE, ELETE, barButtonItem6, LCULATEO, barButtonItem8, barButtonItem1, barButtonItem2 });
             ribbonControl1.Location = new Point(0, 0);
-            ribbonControl1.MaxItemId = 9;
+            ribbonControl1.MaxItemId = 11;
             ribbonControl1.Name = "ribbonControl1";
             ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] { ribbonPage1 });
-            ribbonControl1.Size = new Size(782, 183);
+            ribbonControl1.Size = new Size(832, 183);
             // 
-            // barButtonItem1
+            // o
             // 
-            barButtonItem1.Caption = "ANA SAYFA";
-            barButtonItem1.Id = 1;
-            barButtonItem1.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem1.ImageOptions.LargeImage");
-            barButtonItem1.Name = "barButtonItem1";
+            o.Caption = "HOME";
+            o.Id = 1;
+            o.ImageOptions.LargeImage = (Image)resources.GetObject("o.ImageOptions.LargeImage");
+            o.Name = "o";
             // 
-            // barButtonItem2
+            // TUDENTS
             // 
-            barButtonItem2.Caption = "ÖĞRENCİLER";
-            barButtonItem2.Id = 2;
-            barButtonItem2.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem2.ImageOptions.LargeImage");
-            barButtonItem2.Name = "barButtonItem2";
-            barButtonItem2.ItemClick += barButtonItem2_ItemClick;
+            TUDENTS.Caption = "STUDENTS";
+            TUDENTS.Id = 2;
+            TUDENTS.ImageOptions.LargeImage = (Image)resources.GetObject("TUDENTS.ImageOptions.LargeImage");
+            TUDENTS.Name = "TUDENTS";
             // 
-            // barButtonItem3
+            // AC
             // 
-            barButtonItem3.Caption = "ÖĞRETMENLER";
-            barButtonItem3.Id = 3;
-            barButtonItem3.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem3.ImageOptions.LargeImage");
-            barButtonItem3.Name = "barButtonItem3";
+            AC.Caption = "TEACHERS";
+            AC.Id = 3;
+            AC.ImageOptions.LargeImage = (Image)resources.GetObject("AC.ImageOptions.LargeImage");
+            AC.Name = "AC";
             // 
-            // barButtonItem4
+            // AVE
             // 
-            barButtonItem4.Caption = "KAYDET";
-            barButtonItem4.Id = 4;
-            barButtonItem4.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem4.ImageOptions.LargeImage");
-            barButtonItem4.Name = "barButtonItem4";
+            AVE.Caption = "SAVE";
+            AVE.Id = 4;
+            AVE.ImageOptions.LargeImage = (Image)resources.GetObject("AVE.ImageOptions.LargeImage");
+            AVE.Name = "AVE";
             // 
-            // barButtonItem5
+            // ELETE
             // 
-            barButtonItem5.Caption = "SİL";
-            barButtonItem5.Id = 5;
-            barButtonItem5.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem5.ImageOptions.LargeImage");
-            barButtonItem5.Name = "barButtonItem5";
+            ELETE.Caption = "DELETE";
+            ELETE.Id = 5;
+            ELETE.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem5.ImageOptions.LargeImage");
+            ELETE.Name = "ELETE";
             // 
             // barButtonItem6
             // 
-            barButtonItem6.Caption = "GÜNCELLE";
+            barButtonItem6.Caption = "UPDATE";
             barButtonItem6.Id = 6;
             barButtonItem6.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem6.ImageOptions.LargeImage");
             barButtonItem6.Name = "barButtonItem6";
             // 
-            // barButtonItem7
+            // LCULATEO
             // 
-            barButtonItem7.Caption = "HESAP MAKİNESİ";
-            barButtonItem7.Id = 7;
-            barButtonItem7.ImageOptions.Image = (Image)resources.GetObject("barButtonItem7.ImageOptions.Image");
-            barButtonItem7.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem7.ImageOptions.LargeImage");
-            barButtonItem7.Name = "barButtonItem7";
+            LCULATEO.Caption = "CALCULATOR";
+            LCULATEO.Id = 7;
+            LCULATEO.ImageOptions.Image = (Image)resources.GetObject("barButtonItem7.ImageOptions.Image");
+            LCULATEO.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem7.ImageOptions.LargeImage");
+            LCULATEO.Name = "LCULATEO";
             // 
             // barButtonItem8
             // 
-            barButtonItem8.Caption = "YARDIM";
+            barButtonItem8.Caption = "HELP";
             barButtonItem8.Id = 8;
             barButtonItem8.ImageOptions.Image = (Image)resources.GetObject("barButtonItem8.ImageOptions.Image");
             barButtonItem8.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem8.ImageOptions.LargeImage");
@@ -124,13 +125,15 @@
             // ribbonPageGroup1
             // 
             ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            ribbonPageGroup1.ItemLinks.Add(barButtonItem1);
+            ribbonPageGroup1.ItemLinks.Add(o);
+            ribbonPageGroup1.ItemLinks.Add(TUDENTS, true);
+            ribbonPageGroup1.ItemLinks.Add(AC, true);
+            ribbonPageGroup1.ItemLinks.Add(barButtonItem1, true);
             ribbonPageGroup1.ItemLinks.Add(barButtonItem2, true);
-            ribbonPageGroup1.ItemLinks.Add(barButtonItem3, true);
-            ribbonPageGroup1.ItemLinks.Add(barButtonItem4, true);
-            ribbonPageGroup1.ItemLinks.Add(barButtonItem5, true);
+            ribbonPageGroup1.ItemLinks.Add(AVE, true);
             ribbonPageGroup1.ItemLinks.Add(barButtonItem6, true);
-            ribbonPageGroup1.ItemLinks.Add(barButtonItem7, true);
+            ribbonPageGroup1.ItemLinks.Add(ELETE, true);
+            ribbonPageGroup1.ItemLinks.Add(LCULATEO, true);
             ribbonPageGroup1.ItemLinks.Add(barButtonItem8, true);
             ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
@@ -138,15 +141,31 @@
             // 
             xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // AnaSayfa
+            // barButtonItem1
+            // 
+            barButtonItem1.Caption = "CLASSES";
+            barButtonItem1.Id = 9;
+            barButtonItem1.ImageOptions.Image = (Image)resources.GetObject("barButtonItem1.ImageOptions.Image");
+            barButtonItem1.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem1.ImageOptions.LargeImage");
+            barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            barButtonItem2.Caption = "GRADES";
+            barButtonItem2.Id = 10;
+            barButtonItem2.ImageOptions.Image = (Image)resources.GetObject("barButtonItem2.ImageOptions.Image");
+            barButtonItem2.ImageOptions.LargeImage = (Image)resources.GetObject("barButtonItem2.ImageOptions.LargeImage");
+            barButtonItem2.Name = "barButtonItem2";
+            // 
+            // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(782, 523);
+            ClientSize = new Size(832, 523);
             Controls.Add(ribbonControl1);
             IsMdiContainer = true;
-            Name = "AnaSayfa";
-            Text = "AnaSayfa";
+            Name = "Home";
+            Text = "Home";
             ((System.ComponentModel.ISupportInitialize)ribbonControl1).EndInit();
             ((System.ComponentModel.ISupportInitialize)xtraTabbedMdiManager1).EndInit();
             ResumeLayout(false);
@@ -156,16 +175,18 @@
         #endregion
 
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem o;
+        private DevExpress.XtraBars.BarButtonItem TUDENTS;
+        private DevExpress.XtraBars.BarButtonItem AC;
+        private DevExpress.XtraBars.BarButtonItem AVE;
+        private DevExpress.XtraBars.BarButtonItem ELETE;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem LCULATEO;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }
